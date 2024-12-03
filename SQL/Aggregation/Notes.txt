@@ -1,0 +1,57 @@
+Aggregate functions
+===================
+
+REPLACE():
+---------
+REPLACE(col_name, 0, ' ')
+Replaces all zeroes in column with empty space
+
+eg:
+            becomes:
+10          1
+30          3
+404         44
+
+Max():
+-----
+finds max value of column
+
+Min():
+-----
+finds min value of column
+
+Avg():
+-----
+finds avg values of col values
+
+round():
+-------
+rounds value to nearest integer.
+
+Floor():
+-------
+rounds value DOWN to the nearest integer
+
+Ceil():
+-------
+rounds value UP to the nearest integer
+
+Substring():
+------------
+-extracts substring from a string 
+-substring(string,i,n)
+where i - start of substring, 
+      n - number of characters to extract
+- eg: substring("train",1,3); o/p:tra
+      substring("jackson",-4,2); o/p:ks
+      substring("nunez",-3); o/p:nez 
+https://www.w3schools.com/sql/func_mysql_substring.asp
+
+Sum():
+-----
+finds sum of all values in column
+
+Truncate():
+----------
+shortens value to specified decimal place
+eg: truncate(1234.5678, 2) o/p: 1234.56
